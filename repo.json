@@ -1,0 +1,8 @@
+{
+  "name": "Test",
+  "description": "<repository description>",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/HaiGH-Space/AddonStream/builds/plugins.json"
+  ]
+}
