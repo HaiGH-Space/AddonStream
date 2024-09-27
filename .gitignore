@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.env
+.DS_Store
+/build
+**/build
+/captures
+/.github/workflows
+.externalNativeBuild
+.cxx
+local.properties
+.vscode
+**/Main.kt
