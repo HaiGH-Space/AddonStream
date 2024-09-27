@@ -5,7 +5,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        // Shitpack repo which contains our tools and dependencies 
+        // Shitpack repo which contains our tools and dependencies
         maven("https://jitpack.io")
     }
 
@@ -64,7 +64,34 @@ subprojects {
 
     dependencies {
         val apk by configurations
+        val implementation by configurations
+//        // Stubs for all Cloudstream classes
         apk("com.lagradost:cloudstream3:pre-release")
+
+//        val apkTasks = listOf("deployWithAdb", "build")
+//        val useApk = gradle.startParameter.taskNames.any { taskName ->
+//            apkTasks.any { apkTask ->
+//                taskName.contains(apkTask, ignoreCase = true)
+//            }
+//        }
+//
+//        if (useApk) {
+//            // Stubs for all Cloudstream classes
+//            apk("com.lagradost:cloudstream3:pre-release")
+//        } else {
+//            // For running locally
+//            implementation("com.github.Blatzar:CloudstreamApi:0.1.6")
+//        }
+
+//         Rest of your code here...
+        implementation ("com.github.HaiGH-Space:AddonStream:0.0.1")
+        implementation("io.github.cdimascio:dotenv-kotlin:6.4.2")
+        implementation(kotlin("stdlib")) // adds standard kotlin features
+        implementation("com.github.Blatzar:NiceHttp:0.4.11") // http library
+        implementation("org.jsoup:jsoup:1.16.2") // html parser
+        implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.16.0")
+        implementation("com.fasterxml.jackson.core:jackson-databind:2.16.0")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     }
 }
 
